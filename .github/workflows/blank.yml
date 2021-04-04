@@ -35,3 +35,9 @@ jobs:
         
       - name: Compile
         run: cmd /c compile.bat "sample/Project1.vbp"
+        
+      - name: Upload 
+        uses: actions/upload-artifact@v1
+        with:
+          name: Release
+          path: output
