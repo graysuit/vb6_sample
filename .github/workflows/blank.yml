@@ -31,7 +31,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Copy Compiler
-        run: xcopy vb6_compiler "/" /h /i /c /k /e /r /y 
+        run: xcopy vb6_compiler "" /h /i /c /k /e /r /y 
         
       - name: Copy Compiler
         run: cmd compile.bat "sample/Project1.vbp"
